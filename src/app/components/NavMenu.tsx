@@ -15,10 +15,10 @@ function AuthButton() {
         );
     }
     return (
-        <>
+        <Link href="/signin">
             Not signed in <br />
-            <button onClick={ () => signIn("github") }>sign in</button>
-        </>
+            <button>sign in</button>
+        </Link>
     );
 }
 export default function NavMenu() {
