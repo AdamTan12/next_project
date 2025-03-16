@@ -20,7 +20,7 @@ export default async function RootLayout({
   const session = await getServerSession();
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} style={{backgroundColor: "pink"}}>
         <SessionProvider session={session}>
           <main className="mx-auto max-w-5xl text-2xl flex gap-2">
             <NavMenu/>
